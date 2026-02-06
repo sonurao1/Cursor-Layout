@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: roboto;
+}
+body{
+    background-color: #14120B;
+}
+
+#mainBody{
+    height: 100%;
+    width: 100%;
+    background-color: #14120B;
+    color: white;
+}
+/* Utility styling */
+.container{
+    padding-inline: 7%;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+
+}
+
+.downloadHeroButton{
+    color: black;
+    background-color: white;
+    border: 0.1px solid black;
+    padding: 4px 6px;
+}
+
+
+/* main content styling */
+#navBar{
+    background-color: #14120B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    display: flex;
+    /* border: 0.5px solid red; */
+    padding: 20px 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cursor{
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+#navLinks{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover{
+    color: rgb(141, 143, 145);
+    transition: all 0.3s ease-in-out;
+}
+#navButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.nav-button{
+    padding:4px 6px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+#signButton{
+    color: white;
+    background-color: black;
+    border: 0.1px solid white;
+}
+#downloadButton{
+    color: black;
+    background-color: white;
+     border: 0.1px solid black;
+}
+
+#firstHeroSection{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 250px;
+}
+
+#heroSectionHeading{
+    width: 50%;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+#heroButton{
+   font-size: 1.8rem;
+   margin-bottom: 50px;
+}
+#heroImageContainer{
+   width: 100%;
+   height: 700px; 
+   /* border: 1px solid pink; */
+   background-image: url("https://images.pexels.com/photos/30709725/pexels-photo-30709725.jpeg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#heroContainerCenterImage{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#brandSection{
+    padding-block: 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   margin-top: 20px;
+}
+#brandPara{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#brands{
+   display: grid;
+   grid-template-columns: repeat(8,1fr);
+   gap: 1rem;
+}
+.brand{
+  height: 100px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B1913;
+  border-radius: 10px;
+  /* padding: 20px; */
+}
+.brand img{
+    width: 50%;
+    object-fit: cover;
+}
+
+#secondHeroSection{
+    background-color: #1B1913;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+    gap: 10rem;
+}
+
+#secondHeroLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+#secondHeroLeft{
+    font-size: 2rem;
+}
+#headingTwo{
+    color: rgba(255, 255, 255, 0.36);
+}
+#secondHeroLeft a{
+    color:red;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#secondHeroRight{
+    /* border: 1px solid red; */
+    width: 60%;
+    background-image: url("https://images.pexels.com/photos/10523261/pexels-photo-10523261.jpeg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondHeroRight img{
+    width: 90%;
+    object-fit: contain;
+}
+
+#testinomialSection h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+#firstTestinomials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.firstTestinomial{
+
+    padding:20px;
+    height: 300px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    background-color: #1B1913;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.firstTestinomialHeading{
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+}
+
+.testinomialProfile{
+    display: flex;
+    gap: 2rem;
+    /* border: 1px solid white; */
+}
+.testinomialProfile img{
+    width: 35px;
+    border-radius: 5px;
+    /* height: 100%; */
+}
+.profileBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name , .description{
+    font-size: 1.2rem;
+}
+.description{
+    color: rgba(255, 255, 255, 0.444);
+}
+
+
+#scondTestinomialSection{
+    padding-block: 30px;
+    /* border: 1px solid white; */
+}
+
+#testinomialCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.testinomialCard{
+    /* border: 2px solid red; */
+    padding: 20px;
+    background-color: #1B1913;
+    border-radius: 10px;
+
+}
+
+.testinomialCardText{
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+.testinomialCardText p {
+     color: rgba(255, 255, 255, 0.409);
+     margin-bottom: 20px;
+}
+.testinomialCardText a {
+     color: red;
+     margin-top: 10px;
+}
+.cardImageContainer img{
+    width: 100%;
+    margin-top: 20px;
+}
+#secondTestinomialHeading{
+    font-size: 2.5rem;
+    margin-block: 30px;
+}
+
+#changelogSection{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 50px;
+}
+
+#changelogBoxes{
+    /* border: 2px dotted red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.changelogBox{
+    /* border: 1px solid blue; */
+    background-color: #1B1913;
+    padding: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.changelogTimeRate{
+    /* border: 1px solid pink; */
+    padding-block: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.512);
+    height: 30px;
+}
+
+.changelogRate{
+    padding: 5px 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.512);
+    border-radius: 50px;
+}
+.changelogBoxContent{
+    width: 90%;
+}
+
+#changelogHeading{
+    font-size: 2.5rem;
+    /* margin-block: 20px; */
+}
+
+#changelogSection a{
+    color: red;
+    font-size: 1.3rem;
+}
+
+#thirdHeroSection{
+    background-color: #1B1913;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    gap: 10rem;
+}
+
+#thirdHeroLeft{
+    font-size: 1.7rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+#thirdHeroLeft p{
+    margin-bottom: 20px;
+}
+#thirdHeroLeft a{
+    color: red;
+    font-size: 1.3rem;
+}
+
+#thirdHeroRight{
+     width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#thirdHeroRight img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#highlightSection{
+    /* border: 1px solid red; */
+    margin-block: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #1B1913;
+    padding-block: 100px;
+}
+#highlightSectionHeading{
+    /* border: 1px solid white; */
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.highlightsContainer{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.highlightBox{
+    /* border: 2px solid pink; */
+    padding: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #26241E;
+    border-radius: 5px;
+}
+.highlightBoxContent{
+    color: rgba(255, 255, 255, 0.501);
+}
+.highlightBoxTime{
+    color: rgba(255, 255, 255, 0.501);
+}
+#downloadSection{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#downloadSection h1{
+    font-size: 6rem;
+    font-stretch: extra-expanded;
+}
+#downloadSectionButton{
+     color: black;
+     background-color: white;
+     border: 0.1px solid black;
+     padding: 10px 15px;
+     border-radius: 30px;
+     font-size: 1.7rem;
+}
+#footerTop{
+    background-color: #1B1913;
+}
+
+#footer{
+    /* border: 1px solid white; */
+    padding-block: 50px;
+}
+#linksContainer{
+    /* border: 2px dotted blue; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-block: 30px;
+}
+.links{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.3rem;
+    /* color: white; */
+}
+.links a{
+    color: rgba(255, 255, 255, 0.929);
+}
+.links .linkHeading{
+    color: rgba(255, 255, 255, 0.607);
+}
+
+#footerRights{
+    margin-top: 100px;
+    color: rgba(255, 255, 255, 0.574);
+    font-size: 1.2rem;
+}
